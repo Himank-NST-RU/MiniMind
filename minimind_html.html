@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🎮 MiniMind</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#games">Games</a>
+                <a href="#about">About</a>
+            </nav>
+        </header>
+
+        <!-- Home Page -->
+        <div id="home" class="page">
+            <h1>Welcome to MiniMind</h1>
+            <div class="emoji">🎮</div>
+            <p>Challenge your mind with exciting mini-games!</p>
+            <br>
+            <a href="#games" class="button">Start Playing</a>
+        </div>
+
+        <!-- Games Page -->
+        <div id="games" class="page">
+            <h1>Choose Your Game</h1>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="emoji">🎯</div>
+                    <h3>Guess the Number</h3>
+                    <p>Guess between 1-100</p>
+                    <br>
+                    <a href="#guess-game" class="button">Play</a>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">🎲</div>
+                    <h3>Dice Roll</h3>
+                    <p>Roll and score</p>
+                    <br>
+                    <a href="#dice-game" class="button">Play</a>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">🧠</div>
+                    <h3>Memory Match</h3>
+                    <p>Match pairs</p>
+                    <br>
+                    <a href="#memory-game" class="button">Play</a>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">🎨</div>
+                    <h3>Color Match</h3>
+                    <p>Click the color</p>
+                    <br>
+                    <a href="#color-game" class="button">Play</a>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">⚡</div>
+                    <h3>Reaction Time</h3>
+                    <p>Test your speed</p>
+                    <br>
+                    <a href="#reaction-game" class="button">Play</a>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">🔢</div>
+                    <h3>Math Quiz</h3>
+                    <p>Solve problems</p>
+                    <br>
+                    <a href="#math-game" class="button">Play</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guess Game -->
+        <div id="guess-game" class="page">
+            <h1>🎯 Guess the Number</h1>
+            
+            <div class="stats">
+                <div class="stat">Score: 0</div>
+                <div class="stat">Attempts: 0</div>
+            </div>
+
+            <p>Guess a number between 1 and 100</p>
+            <br>
+            <input type="number" placeholder="Enter guess" min="1" max="100">
+            <br><br>
+            <button>Submit Guess</button>
+            <button>New Game</button>
+            <br><br>
+            <a href="#games">← Back to Games</a>
+        </div>
+
+        <!-- Dice Game -->
+        <div id="dice-game" class="page">
+            <h1>🎲 Dice Roll</h1>
+            
+            <div class="stats">
+                <div class="stat">Score: 0</div>
+                <div class="stat">Rolls: 0</div>
+            </div>
+
+            <div style="font-size: 100px; margin: 30px 0;">🎲</div>
+            <button>Roll Dice</button>
+            <br><br>
+            <a href="#games">← Back to Games</a>
+        </div>
+
+        <!-- Memory Game -->
+        <div id="memory-game" class="page">
+            <h1>🧠 Memory Match</h1>
+            
+            <div class="stats">
+                <div class="stat">Moves: 0</div>
+                <div class="stat">Matches: 0/8</div>
+            </div>
+
+            <div class="memory-grid">
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+                <div class="card memory-card">?</div>
+            </div>
+
+            <button>New Game</button>
+            <br><br>
+            <a href="#games">← Back to Games</a>
+        </div>
+
+        <!-- Color Game -->
+        <div id="color-game" class="page">
+            <h1>🎨 Color Match</h1>
+            
+            <div class="stats">
+                <div class="stat">Score: 0</div>
+                <div class="stat">Time: 30s</div>
+            </div>
+
+            <p>Click the color:</p>
+            <h2 class="color-text">RED</h2>
+
+            <div class="color-buttons">
+                <button class="color-btn red"></button>
+                <button class="color-btn blue"></button>
+                <button class="color-btn green"></button>
+                <button class="color-btn yellow"></button>
+            </div>
+            <br><br>
+            <button>New Game</button>
+            <br><br>
+            <a href="#games">← Back to Games</a>
+        </div>
+
+        <!-- Reaction Game -->
+        <div id="reaction-game" class="page">
+            <h1>⚡ Reaction Time</h1>
+            
+            <div class="stats">
+                <div class="stat">Best: - ms</div>
+                <div class="stat">Round: 0/5</div>
+            </div>
+
+            <div class="reaction-box">
+                Click when green!
+            </div>
+
+            <button>New Game</button>
+            <br><br>
+            <a href="#games">← Back to Games</a>
+        </div>
+
+        <!-- Math Game -->
+        <div id="math-game" class="page">
+            <h1>🔢 Math Quiz</h1>
+            
+            <div class="stats">
+                <div class="stat">Score: 0</div>
+                <div class="stat">Time: 60s</div>
+            </div>
+
+            <h2 class="math-question">5 + 3 = ?</h2>
+            <input type="number" placeholder="Answer">
+            <br><br>
+            <button>Submit</button>
+            <button>New Game</button>
+            <br><br>
+            <a href="#games">← Back to Games</a>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <h1>About MiniMind</h1>
+            <div class="emoji">👨‍🎓</div>
+            
+            <p>A simple browser-based mini-game hub.</p>
+            <p>Built with HTML and CSS only.</p>
+            <br>
+            
+            <div class="card about-card">
+                <p><strong>Institution:</strong> Newton School of Technology</p>
+                <p><strong>Project:</strong> SNW Capstone Project</p>
+                <p><strong>Mentor:</strong> Ajay Sharma</p>
+                <p><strong>Batch:</strong> 2025</p>
+                <p><strong>Tech Stack:</strong> HTML & CSS</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>MiniMind © 2025 | SNW Capstone Project | Newton School of Technology</p>
+            <p>Mentor: Ajay Sharma | Batch 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

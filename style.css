@@ -1,0 +1,266 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: gold;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Hide Pages by Default */
+.page {
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Show Page When Target Matches */
+.page:target {
+    display: block;
+}
+
+/* Show Home by Default */
+#home {
+    display: block;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Card */
+.card {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Button */
+button, a.button {
+    background: gold;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+button:hover, a.button:hover {
+    background: #ffd700;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Emoji */
+.emoji {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+/* Memory Grid */
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.memory-card {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Color Game */
+.color-text {
+    font-size: 60px;
+    margin: 20px 0;
+    color: red;
+}
+
+.color-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.color-btn {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+}
+
+.color-btn.red {
+    background: red;
+}
+
+.color-btn.blue {
+    background: blue;
+}
+
+.color-btn.green {
+    background: green;
+}
+
+.color-btn.yellow {
+    background: yellow;
+}
+
+/* Reaction Box */
+.reaction-box {
+    width: 100%;
+    height: 250px;
+    background: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 30px 0;
+    cursor: pointer;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.reaction-box:hover {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+/* Math Question */
+.math-question {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+/* About Card */
+.about-card {
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .memory-grid {
+        grid-template-columns: repeat(4, 60px);
+    }
+
+    .memory-card {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+}
